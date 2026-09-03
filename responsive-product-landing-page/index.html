@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseFit - Smartwatch Landing Page</title>
+
+  <!-- Tailwind CSS via CDN (simple, no build step needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- ============ 1. NAVIGATION BAR ============ -->
+  <nav class="flex flex-wrap items-center justify-between px-6 py-4 shadow-md">
+    <!-- Brand name -->
+    <h1 class="text-2xl font-bold text-blue-600">PulseFit</h1>
+
+    <!-- Nav links: hidden on very small screens, shown on medium+ screens -->
+    <ul class="hidden md:flex gap-6 text-gray-600 font-medium">
+      <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+      <li><a href="#benefits" class="hover:text-blue-600">Benefits</a></li>
+      <li><a href="#reviews" class="hover:text-blue-600">Reviews</a></li>
+      <li><a href="#pricing" class="hover:text-blue-600">Pricing</a></li>
+    </ul>
+
+    <a href="#pricing" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+      Buy Now
+    </a>
+  </nav>
+
+  <!-- ============ 2. HERO SECTION ============ -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-6 py-16 max-w-6xl mx-auto gap-10">
+    <!-- Text side -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-4xl font-bold mb-4">Meet the PulseFit Smartwatch</h2>
+      <p class="text-gray-600 mb-6">
+        Track your fitness, monitor your health, and stay connected —
+        all from your wrist. Simple, smart, and built for everyday life.
+      </p>
+      <a href="#pricing" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Image side -->
+    <div class="md:w-1/2">
+      <img src="https://images.pexels.com/photos/13007642/pexels-photo-13007642.jpeg"
+           alt="PulseFit Smartwatch"
+           class="rounded-xl shadow-lg w-full" />
+    </div>
+  </section>
+
+  <!-- ============ 3. FEATURES SECTION ============ -->
+  <section id="features" class="bg-gray-50 px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Key Features</h2>
+
+    <!-- Grid: 1 column on mobile, 3 columns on medium+ screens -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <p class="text-4xl mb-3">❤️</p>
+        <h3 class="font-semibold text-lg mb-2">Heart Rate Monitor</h3>
+        <p class="text-gray-600">Real-time tracking to keep an eye on your health.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <p class="text-4xl mb-3">🔋</p>
+        <h3 class="font-semibold text-lg mb-2">7-Day Battery Life</h3>
+        <p class="text-gray-600">Charge less, wear more, all week long.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <p class="text-4xl mb-3">💧</p>
+        <h3 class="font-semibold text-lg mb-2">Waterproof Design</h3>
+        <p class="text-gray-600">Swim, shower, or run in the rain — no worries.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <p class="text-4xl mb-3">📱</p>
+        <h3 class="font-semibold text-lg mb-2">Smart Notifications</h3>
+        <p class="text-gray-600">Calls, texts, and app alerts right on your wrist.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <p class="text-4xl mb-3">🏃</p>
+        <h3 class="font-semibold text-lg mb-2">Workout Tracking</h3>
+        <p class="text-gray-600">Supports 20+ sports and activity modes.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <p class="text-4xl mb-3">😴</p>
+        <h3 class="font-semibold text-lg mb-2">Sleep Analysis</h3>
+        <p class="text-gray-600">Understand your sleep quality every night.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 4. BENEFITS SECTION ============ -->
+  <section id="benefits" class="px-6 py-16 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Why Choose PulseFit?</h2>
+
+    <div class="flex flex-col md:flex-row gap-8">
+      <div class="md:w-1/2">
+        <img src="https://images.pexels.com/photos/267391/pexels-photo-267391.jpeg"
+             alt="Person using smartwatch"
+             class="rounded-xl shadow-lg w-full" />
+      </div>
+
+      <div class="md:w-1/2 flex flex-col justify-center gap-4">
+        <p><span class="font-semibold">✔ Stay Motivated:</span> Daily goals and reminders keep you active.</p>
+        <p><span class="font-semibold">✔ Save Time:</span> All your health data in one simple app.</p>
+        <p><span class="font-semibold">✔ Look Good:</span> Sleek design that fits any style.</p>
+        <p><span class="font-semibold">✔ Peace of Mind:</span> Health alerts that matter, when they matter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. TESTIMONIALS SECTION ============ -->
+  <section id="reviews" class="bg-gray-50 px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">What Our Customers Say</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 mb-4">"PulseFit changed how I track my workouts. Super easy to use!"</p>
+        <p class="font-semibold">— Ananya R.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 mb-4">"Battery lasts the whole week. I barely have to charge it."</p>
+        <p class="font-semibold">— Rahul M.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-gray-600 mb-4">"Comfortable, stylish, and the sleep tracking is spot on."</p>
+        <p class="font-semibold">— Sneha K.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 6. PRICING / CALL-TO-ACTION SECTION ============ -->
+  <section id="pricing" class="px-6 py-16 text-center bg-blue-600 text-white">
+    <h2 class="text-3xl font-bold mb-4">Get Your PulseFit Today</h2>
+    <p class="text-4xl font-bold mb-6">₹4,999</p>
+    <a href="#" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100">
+      Buy Now
+    </a>
+  </section>
+
+  <!-- ============ 7. FOOTER ============ -->
+  <footer class="bg-gray-900 text-gray-300 px-6 py-10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+
+      <p>&copy; 2026 PulseFit. All rights reserved.</p>
+
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white">Facebook</a>
+        <a href="#" class="hover:text-white">Instagram</a>
+        <a href="#" class="hover:text-white">Twitter</a>
+      </div>
+
+      <p>Contact: support@pulsefit.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
